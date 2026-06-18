@@ -7,7 +7,6 @@ from bot.db.models import Direction
 from bot.i18n import t
 from bot.utils.cities import city_label
 from bot.utils.constants import (
-    BAGGAGE_NEGOTIABLE,
     BAGGAGE_PRESETS,
     CARGO_CUSTOM_PREFIX,
     CARGO_KEYS,
@@ -56,7 +55,7 @@ def baggage(lang: str) -> InlineKeyboardMarkup:
     b = InlineKeyboardBuilder()
     for preset in BAGGAGE_PRESETS:
         b.button(text=preset, callback_data=f"pbag:{preset}")
-    b.button(text=t("baggage_negotiable", lang), callback_data=f"pbag:{BAGGAGE_NEGOTIABLE}")
+    b.button(text=t("baggage_custom_btn", lang), callback_data="pbag_custom")
     b.adjust(3, 1)
     return b.as_markup()
 

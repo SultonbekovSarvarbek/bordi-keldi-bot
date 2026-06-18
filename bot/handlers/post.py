@@ -206,6 +206,13 @@ async def step_baggage_btn(call: CallbackQuery, state: FSMContext, lang: str) ->
     await call.answer()
 
 
+@router.callback_query(PostTrip.baggage, F.data == "pbag_custom")
+async def step_baggage_custom(call: CallbackQuery, state: FSMContext, lang: str) -> None:
+    # Остаёмся в состоянии baggage: введённый текст поймает step_baggage_text.
+    await call.message.edit_text(t("baggage_custom_prompt", lang))
+    await call.answer()
+
+
 @router.message(PostTrip.baggage, F.text)
 async def step_baggage_text(message: Message, state: FSMContext, lang: str) -> None:
     await state.update_data(baggage=message.text.strip())

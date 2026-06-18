@@ -52,6 +52,8 @@ UZ: dict[str, str] = {
         "Tugmani tanlang yoki qoʻlda yozing (masalan <code>23+23</code>):"
     ),
     "baggage_negotiable": "Kelishuv asosida",
+    "baggage_custom_btn": "✍️ Oʻzim yozaman",
+    "baggage_custom_prompt": "Qancha boʻsh joy bera olishingizni yozing (masalan <code>23+23</code>):",
     "post_cargo": "Nimani olib keta olasiz?\n(bir nechtasini tanlash yoki oʻzingiznikini qoʻshish mumkin)",
     "cargo_documents": "📄 Hujjatlar",
     "cargo_cosmetics": "💄 Kosmetika",
