@@ -55,9 +55,12 @@ UZ: dict[str, str] = {
     "baggage_custom_btn": "✍️ Oʻzim yozaman",
     "baggage_custom_prompt": "Qancha boʻsh joy bera olishingizni yozing (masalan <code>23+23</code>):",
     "post_cargo": "Nimani olib keta olasiz?\n(bir nechtasini tanlash yoki oʻzingiznikini qoʻshish mumkin)",
+    "cargo_clothes": "👕 Kiyim-kechak",
     "cargo_documents": "📄 Hujjatlar",
+    "cargo_phone": "📱 Telefon",
+    "cargo_laptop": "💻 Noutbuk",
+    # Legacy (eski eʼlonlar uchun)
     "cargo_cosmetics": "💄 Kosmetika",
-    "cargo_clothes": "👕 Kiyim va buyumlar",
     "cargo_any": "📦 Farqi yoʻq",
     "cargo_add_custom": "✍️ Oʻzim qoʻshaman",
     "cargo_done": "✅ Tayyor",

@@ -56,9 +56,12 @@ RU: dict[str, str] = {
     "baggage_custom_btn": "✍️ Написать своё",
     "baggage_custom_prompt": "Напишите, сколько свободного места готовы отдать (например <code>23+23</code>):",
     "post_cargo": "Что готовы взять?\n(можно выбрать несколько или добавить своё)",
+    "cargo_clothes": "👕 Одежда",
     "cargo_documents": "📄 Документы",
+    "cargo_phone": "📱 Телефон",
+    "cargo_laptop": "💻 Ноутбук",
+    # Legacy (для старых объявлений)
     "cargo_cosmetics": "💄 Косметика",
-    "cargo_clothes": "👕 Одежда и вещи",
     "cargo_any": "📦 Без разницы",
     "cargo_add_custom": "✍️ Добавить своё",
     "cargo_done": "✅ Готово",

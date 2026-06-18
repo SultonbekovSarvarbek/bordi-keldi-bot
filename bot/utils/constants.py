@@ -1,11 +1,15 @@
 from __future__ import annotations
 
 # Канонические ключи "что готов взять" (хранятся в БД, рендерятся через i18n).
-CARGO_KEYS = ["documents", "cosmetics", "clothes", "any"]
+# Порядок = порядок кнопок: Kiyim-kechak, Hujjatlar, Telefon, Noutbuk.
+CARGO_KEYS = ["clothes", "documents", "phone", "laptop"]
 CARGO_LABEL = {
-    "documents": "cargo_documents",
-    "cosmetics": "cargo_cosmetics",
     "clothes": "cargo_clothes",
+    "documents": "cargo_documents",
+    "phone": "cargo_phone",
+    "laptop": "cargo_laptop",
+    # Legacy-ключи: в кнопках не показываются, но старые объявления рендерятся.
+    "cosmetics": "cargo_cosmetics",
     "any": "cargo_any",
 }
 
